@@ -5,12 +5,13 @@
       <div class="section">
         <div class="container">
           <div class="md-layout">
-            <div class="md-layout-item md-size-66 md-xsmall-size-100 mx-auto text-center">
+            <div class="md-layout-item md-size-33 md-xsmall-size-50 mx-auto text-center">
               <h1 class="title">Uni'Son</h1>
               <h3 class="subtitle">by Pulsation UTT</h3>
               <h5 class="description">
                 résumé unison.
                 <img
+                        v-img
                   src="@/assets/img/affiche/affiche2019.png"
                   alt="affiche2019"
                   style="padding-bottom: 15px"

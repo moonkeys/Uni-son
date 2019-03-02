@@ -62,36 +62,18 @@
               <div
                 v-for="(src, index) in images"
                 :key="index"
-                class="pic"
+                class="md-layout-item md-medium-size-25 md-small-size-33"
                 @click="() => showImg(index)"
               >
                 <img :src="src">
               </div>
-              <div class>
+              <div class="md-layout-item md-medium-size-25 md-small-size-33">
                 <VueEasyLightbox
                   :visible="visible"
                   :imgs="images"
                   :index="index"
                   @hide="handleHide"
                 ></VueEasyLightbox>
-              </div>
-
-              <img v-img:group-1 :src="photos[3].image" class="rounded">
-              <p></p>
-            </div>
-            <div class="md-layout">
-              <div class="md-layout-item md-size-50 ml-auto">
-                <p></p>
-
-                <img v-img:group-1 :src="photos[1].image" class="rounded">
-                <p></p>
-              </div>
-              <div class="md-layout-item md-size-50 mr-auto">
-                <img v-img:group-1 :src="photos[2].image" class="rounded">
-                <p style="padding-bottom:25px;"></p>
-                <p>
-                  <img v-img:group-1 :src="photos[0].image" class="rounded">
-                </p>
               </div>
             </div>
           </div>
