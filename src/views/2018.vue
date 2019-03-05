@@ -1,15 +1,15 @@
-<template>
+<template xmlns:v-img="http://www.w3.org/1999/xhtml">
   <div class="wrapper">
     <parallax class="section page-header header-filter" :style="headerStyle"></parallax>
     <div class="main main-raised">
       <div class="section">
         <div class="container">
           <div class="md-layout">
-            <div class="md-layout-item md-size-66 md-xsmall-size-100 mx-auto text-center">
+            <div class="md-layout-item md-size-33 md-xsmall-size-50 mx-auto text-center">
               <h1 class="title">Uni'Son 2018</h1>
               <h5 class="description">
                 Edition 2018
-                <img
+                <img v-img
                   src="@/assets/img/affiche/affiche2018.png"
                   alt="affiche2018"
                   style="padding-bottom: 15px"
@@ -27,7 +27,7 @@
             <div class="md-layout-item md-medium-size-33 md-small-size-100">
               <div class="team-player">
                 <md-card class="md-card-plain">
-                  <div class="md-layout-item md-size-50 mx-auto">
+                  <div class="md-layout-item md-size-50 md-medium-size-33 md-small-size-100 mx-auto">
                     <img
                       src="@/assets/img/faces/stone-weather.jpg"
                       alt="Thumbnail Image"
@@ -58,6 +58,7 @@
                       <p class="card-description">
                         Bzzzzzzzzz, entre reprises et créations pop-rock, les Bees Nest vont faire bourdonner la scène d'Uni'Son ! Back in Bees Nest !
                         <img
+                                v-img
                           src="@/assets/img/faces/beesnest.jpg"
                           alt="Thumbnail Image"
                           class="img-raised img-fluid"
@@ -81,6 +82,7 @@
                         Alors en fait j’ai ajouté Guillaume sur Facebook par erreur et puis on a commencé à faire du punk rock. Après il a rencontré Stann dans ce genre de sanitaire (tu le sais) et comme par hasard le démon du rythme l’habitait. Du coup on a commencé à faire du sale dans le respect de chacun.
                         Voilà c’est tout. A plus dans le bus.
                         <img
+                                v-img
                           src="@/assets/img/faces/ceci-dit.png"
                           alt="Thumbnail Image"
                           class="img-raised img-fluid"
@@ -103,6 +105,7 @@
                       <p class="card-description">
                         Viens dire merci à Jazzy et Michel, le groupe qui t'envoie de bonne vibes sur tes orifices auditifs
                         <img
+                                v-img
                           src="@/assets/img/faces/jazzy-et-michel.jpg"
                           alt="Thumbnail Image"
                           class="img-raised img-fluid"
@@ -125,6 +128,7 @@
                       <p class="card-description">
                         On réveille les démons de notre apocalypse qui détruisent tout entre les lignes et qui sentent l'esprit des adolescents qui se croient millionnaires.
                         <img
+                                v-img
                           src="@/assets/img/faces/ptnrv.jpg"
                           alt="Thumbnail Image"
                           class="img-raised img-fluid"
@@ -150,6 +154,7 @@
                         Hey ! Nous c'est Rush to Stage, un groupe de l'UTBM monté il y a peu et spécialement pour l'occasion ! Notre délire ? Du bon vieux Rock avec une pointe de Punk de temps à autres, mais on joue aussi un peu de Pop 😀
                         N'hésite pas à venir nous écouter, on fait un peu peur, mais on mord pas, promis ! 😉
                         <img
+                                v-img
                           src="@/assets/img/faces/rush-to-stage.jpg"
                           alt="Thumbnail Image"
                           class="img-raised img-fluid"
@@ -172,6 +177,7 @@
                       <p class="card-description">
                         Avec plein de a
                         <img
+                                v-img
                           src="@/assets/img/faces/wazaaa.jpg"
                           alt="Thumbnail Image"
                           class="img-raised img-fluid"
@@ -194,6 +200,7 @@
                       <p class="card-description">
                         Le groupe Zipper viendra de l'UTC pour te transporter dans leur univers : le hardrock
                         <img
+                                v-img
                           src="@/assets/img/faces/zipper.jpg"
                           alt="Thumbnail Image"
                           class="img-raised img-fluid"
@@ -216,6 +223,7 @@
                       <p class="card-description">
                         Ils te proposeront des reprises de riffs et des créations originales, le tout assaisonnés d’une petite sauce résultant d’un mélange de groove et de subtilité
                         <img
+                                v-img
                           src="@/assets/img/faces/focked-rythm.jpg"
                           alt="Thumbnail Image"
                           class="img-raised img-fluid"
@@ -236,6 +244,7 @@
               <md-card class="md-card-plain">
                 <div class="md-layout-item mx-auto">
                   <div
+                          v-img:group1
                     class="image"
                     v-for="(image, imageIndex) in images"
                     :key="imageIndex"
