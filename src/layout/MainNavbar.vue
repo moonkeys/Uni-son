@@ -9,7 +9,7 @@
   >
     <div class="md-toolbar-row md-collapse-lateral">
       <div class="md-toolbar-section-start">
-        <h2 class="md-title">Uni'Son</h2>
+        <h2 class="md-title"><img src="@/assets/img/affiche/logocolore.png" width="100px" ></h2>
       </div>
       <div class="md-toolbar-section-end">
         <md-button

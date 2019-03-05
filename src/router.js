@@ -46,10 +46,10 @@ export default new Router({
             }
         },
         {
-            path: '/home',
-            name: 'home',
+            path: '/index',
+            name: 'index',
             components: {
-                default: Home,
+                default: Index,
                 header: MainNavbar,
                 footer: MainFooter
             },

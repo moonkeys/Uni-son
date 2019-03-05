@@ -37,7 +37,7 @@
                 </div>
 
                 <h2 class="title text-center">Où c'est ?</h2>
-                <div class="md-layout-item md-size-100 mx-auto">
+                <div class="md-layout-item md-size-50 mx-auto">
                   <h5
                     class="description"
                   >Pour la première fois, Uni'Son aura lieu à la Chapelle Argence !</h5>

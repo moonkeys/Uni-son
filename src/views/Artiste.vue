@@ -1,26 +1,39 @@
-<template>
+<template xmlns:v-img="http://www.w3.org/1999/xhtml">
   <div class="section profile-content">
     <div class="container">
       <div class="md-layout">
         <div class="md-layout-item mx-auto">
           <div class="profile">
             <div class="avatar">
-              <img :src="img" alt="Circle Image" class="img-raised rounded-circle img-fluid">
+              <img
+                :src="img"
+                alt="Circle Image"
+                class="img-raised rounded-circle img-fluid md-medium-size-25 md-small-size-33"
+              />
             </div>
             <div class="name">
-              <h3 class="title">{{nom}}</h3>
-              <h6>{{titre}}</h6>
+              <h3 class="title">{{ nom }}</h3>
+              <h6>{{ titre }}</h6>
               <div v-show="isVisible">
-                <md-button :href="insta" class="md-just-icon md-simple md-instagram">
+                <md-button
+                  :href="insta"
+                  class="md-just-icon md-simple md-instagram"
+                >
                   <i class="fab fa-instagram"></i>
                 </md-button>
-                <md-button :href="fb" class="md-just-icon md-simple md-facebook">
+                <md-button
+                  :href="fb"
+                  class="md-just-icon md-simple md-facebook"
+                >
                   <i class="fab fa-facebook"></i>
                 </md-button>
                 <md-button :href="yt" class="md-just-icon md-simple md-youtube">
                   <i class="fab fa-youtube"></i>
                 </md-button>
-                <md-button :href="twitter" class="md-just-icon md-simple md-twitter">
+                <md-button
+                  :href="twitter"
+                  class="md-just-icon md-simple md-twitter"
+                >
                   <i class="fab fa-twitter"></i>
                 </md-button>
               </div>
@@ -29,13 +42,14 @@
         </div>
       </div>
       <div class="description text-center">
-        <p>{{description}}</p>
-      </div>
-      <div class="profile-tabs">
+        <p>{{ description }}</p>
+      </div><div class="container">
+      <div class="md-layout" >
+          <div class="md-layout-item md-size-66 mx-auto md-small-size-100">
         <!-- here you can add your content for tab-content -->
         <template>
-          <div class="md-layout" v-if="carousel">
-            <carousel
+          <div v-if="carousel">
+           <md-card><carousel
               :per-page="1"
               loop
               :speed="700"
@@ -46,40 +60,46 @@
               navigationNextLabel="<i class='material-icons'>keyboard_arrow_right</i>"
               navigationPrevLabel="<i class='material-icons'>keyboard_arrow_left</i>"
             >
-              <slide>
-                <img v-img:group :src="photos[0].image" alt="carousel1">
-              </slide>
-              <slide>
-                <img v-img:group :src="photos[1].image" alt="carousel2">
-              </slide>
-              <slide>
-                <img v-img:group :src="photos[2].image" alt="carousel3">
-              </slide>
-            </carousel>
-          </div>
-          <div align="center" v-else>
-            <div class="md-layout-item md-medium-size-50 md-small-size-75">
-              <div
-                v-for="(src, index) in images"
+              <slide
+                v-for="(src, index) in photos"
                 :key="index"
-                class="md-layout-item md-medium-size-25 md-small-size-33"
+                class="md-layout-item md-medium-size-33 md-small-size-50"
                 @click="() => showImg(index)"
               >
-                <img :src="src">
-              </div>
-              <div class="md-layout-item md-medium-size-25 md-small-size-33">
-                <VueEasyLightbox
-                  :visible="visible"
-                  :imgs="images"
-                  :index="index"
-                  @hide="handleHide"
-                ></VueEasyLightbox>
-              </div>
+                <img v-img:group :src="src.image" alt="carousel1" />
+              </slide>
+            </carousel></md-card>
+          </div>
+          <div align="center" v-else>
+            <div>
+              <img v-img :src="photos" class="img-raised rounded img-fluid"/>
             </div>
+            <!--<div
+              v-for="(src, index) in images"
+              :key="index"
+              class="md-layout-item md-medium-size-25 md-small-size-33"
+              @click="() => showImg(index)"
+            >
+              <div class="md-layout-item md-medium-size-25 md-small-size-33">
+                <div class="md-layout-item md-medium-size-25 md-small-size-33">
+                  <img :src="src" />
+                </div>
+
+                <div class="md-layout-item md-medium-size-25 md-small-size-33">
+                  <VueEasyLightbox
+                    :visible="visible"
+                    :imgs="images"
+                    :index="index"
+                    @hide="handleHide"
+                  ></VueEasyLightbox>
+                </div>
+              </div>
+            </div>-->
           </div>
         </template>
+          </div>
       </div>
-    </div>
+    </div></div>
   </div>
 </template>
 
@@ -112,7 +132,6 @@ export default {
     nom: String,
     titre: String,
     photos: Array,
-    images: Array,
     description: String,
     carousel: false,
     isVisible: false,
@@ -167,30 +186,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.section {
-  padding: 0;
-}
 
-.profile-tabs /deep/ {
-  .md-card-tabs .md-list {
-    justify-content: center;
-  }
 
-  [class*="tab-pane-"] {
-    margin-top: 3.213rem;
-    padding-bottom: 50px;
-
-    img {
-      margin-bottom: 2.142rem;
-    }
-  }
-}
-.image {
-  float: left;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border: 1px solid #ebebeb;
-  margin: 5px;
-}
 </style>
