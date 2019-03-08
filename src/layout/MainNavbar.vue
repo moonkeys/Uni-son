@@ -71,7 +71,7 @@
                   </div>
                 </a>
               </li>
-              <md-list-item href="artistes" target="_blank">
+              <md-list-item href="https://billetterie.bde.utt.fr/" target="_blank">
                 <i class="fas fa-ticket-alt"></i>
                 <p>Billeterie</p>
               </md-list-item>
@@ -84,12 +84,12 @@
               <md-list-item href="https://www.facebook.com/UniSonTroyes/" target="_blank">
                 <i class="fab fa-facebook-square"></i>
                 <p class="hidden-lg">Facebook</p>
-                <md-tooltip md-direction="bottom">Like us on Facebook</md-tooltip>
+                <md-tooltip md-direction="bottom">Like nous sur Facebook</md-tooltip>
               </md-list-item>
               <md-list-item href="https://www.instagram.com/pulsationutt/?hl=fr" target="_blank">
                 <i class="fab fa-instagram"></i>
                 <p class="hidden-lg">Instagram</p>
-                <md-tooltip md-direction="bottom">Follow us on Instagram</md-tooltip>
+                <md-tooltip md-direction="bottom">Follow nous sur Instagram</md-tooltip>
               </md-list-item>
             </md-list>
           </div>

@@ -27,7 +27,7 @@
             <div class="md-layout-item md-medium-size-33 md-small-size-100">
               <div class="team-player">
                 <md-card class="md-card-plain">
-                  <div class="md-layout-item md-size-50 md-medium-size-33 md-small-size-100 mx-auto">
+                  <div class="md-layout-item md-size-25 md-medium-size-33 md-small-size-100 mx-auto">
                     <img
                       src="@/assets/img/faces/stone-weather.jpg"
                       alt="Thumbnail Image"
@@ -39,7 +39,25 @@
                     <small class="card-description text-muted">Funk rock</small>
                   </h4>
                   <md-card-content>
-                    <p class="card-description">input text.</p>
+                    <p class="card-description">L’univers de Stone Weather promet un beau moment de réjouissance. Si le rock est son adage, Stone Weather empreinte allègrement son ambiance à la pop, au blues, au funk. Ainsi les 4 musiciens plongent le public dans un set éclectique savamment orche
+                    </p>
+                    <div class="md-layout" >
+                      <div class="md-layout-item md-size-50 md-medium-size-33 md-small-size-100 mx-auto"> <img
+                              v-img
+                              src="@/assets/img/2018/uni_son-44.jpg"
+                              alt="Thumbnail Image"
+                              class="img-raised img-fluid"
+                      ></div>
+                      <div class="md-layout-item md-size-50 md-medium-size-33 md-small-size-100 mx-auto">
+                        <img
+                                v-img
+                                src="@/assets/img/2018/uni_son-45.jpg"
+                                alt="Thumbnail Image"
+                                class="img-raised img-fluid"
+                        ></div>
+
+                    </div>
+
                   </md-card-content>
                 </md-card>
               </div>
@@ -85,7 +103,7 @@
                                 v-img
                           src="@/assets/img/faces/ceci-dit.png"
                           alt="Thumbnail Image"
-                          class="img-raised img-fluid"
+                          class="img rounded-circle img-fluid"
                         >
                       </p>
                     </md-card-content>
@@ -239,6 +257,7 @@
       </div>
       <div class="section text-center">
         <div class="container">
+          <h1 class="title">Galerie photos édition 2018</h1>
           <div class="md-layout-item md-medium-size-33 md-small-size-100">
             <div class="team-player">
               <md-card class="md-card-plain">

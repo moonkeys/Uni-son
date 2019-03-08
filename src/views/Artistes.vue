@@ -37,9 +37,9 @@
                     class="md-layout-item md-medium-size-33 md-small-size-100"
                   >
                     <artiste
-                      :photos="photosUnison[1].image"
-                      nom="Big Bang UTT"
-                      titre="Meilleur groupe de l'UTT"
+                      :photos="photosUnison[0].image"
+                      nom="Big Band UTT"
+                      titre="Meilleur Big Band de l'UTT"
                       description="input text."
                     />
                   </div>
@@ -47,7 +47,7 @@
                     class="md-layout-item md-medium-size-33 md-small-size-100"
                   >
                     <artiste
-                      :photos="photosUnison[2].image"
+                      :photos="photosUnison[1].image"
                       nom="GSN"
                       titre="style musical"
                       description="input text."
@@ -57,7 +57,7 @@
                     class="md-layout-item md-medium-size-33 md-small-size-100"
                   >
                     <artiste
-                      :photos="photosUnison[3].image"
+                      :photos="photosUnison[2].image"
                       nom="Prol'UTT"
                       titre="style musical"
                       description="input text."
@@ -69,7 +69,7 @@
                     class="md-layout-item md-medium-size-33 md-small-size-100"
                   >
                     <artiste
-                      :photos="photosUnison[1].image"
+                      :photos="photosUnison[4].image"
                       nom="Red Machines"
                       titre="Meilleur groupe de l'UTT"
                       description="input text."
@@ -79,7 +79,7 @@
                     class="md-layout-item md-medium-size-33 md-small-size-100"
                   >
                     <artiste
-                      :photos="photosUnison[2].image"
+                      :photos="photosUnison[3].image"
                       nom="Les Zicos"
                       titre="style musical"
                       description="input text."
@@ -95,19 +95,21 @@
               <div class="team">
                 <div class="md-layout" style="padding-bottom: 20px">
                   <div
-                          class="md-layout-item md-medium-size-33 md-small-size-100"
+                    class="md-layout-item md-medium-size-33 md-small-size-100"
                   >
-
-              <artiste
-                :photos="photosUnison[2].image"
-                nom="Still in Beta"
-                titre="UTBM"
-                description="input text."
-              />
-                  </div></div></div>
+                    <artiste
+                      :photos="photosUnison[5].image"
+                      nom="Still in Beta"
+                      titre="UTBM"
+                      description="Hey ! Nous c'est Still in Beta, un groupe de l'UTBM monté il y a peu et spécialement pour l'occasion ! Notre délire ? Du bon vieux Rock avec une pointe de Punk de temps à autres, mais on joue aussi un peu de Pop 😀 N'hésite pas à venir nous écouter, on fait un peu peur, mais on mord pas, promis ! 😉"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        </div></div>
+      </div>
     </div>
   </div>
 </template>
@@ -126,11 +128,12 @@ export default {
       ],
       photoMoonkeys: require("@/assets/img/faces/moonkeys.jpg"),
       photosUnison: [
-        { image: require("@/assets/img/2018/uni_son-5.jpg") },
+        { image: require("@/assets/img/faces/big-band.jpg") },
         { image: require("@/assets/img/2018/uni_son-12.jpg") },
-        { image: require("@/assets/img/2018/uni_son-35.jpg") },
+        { image: require("@/assets/img/faces/prol-utt.jpg") },
         { image: require("@/assets/img/2018/uni_son-14.jpg") },
-        { image: require("@/assets/img/2018/uni_son-40.jpg") }
+        { image: require("@/assets/img/faces/redmachines.png") },
+        { image: require("@/assets/img/faces/redmachines.png") }
       ]
     };
   },

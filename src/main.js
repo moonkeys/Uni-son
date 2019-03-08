@@ -8,12 +8,14 @@ import GoogleMaps from "./plugins/googleMaps";
 
 import VueImg from "v-img";
 import Lightbox from 'vue-easy-lightbox';
+import VueYouTubeEmbed from 'vue-youtube-embed'
 
 
 Vue.config.productionTip = false;
 
 Vue.use(MaterialKit);
 Vue.use(VueImg);
+Vue.use(VueYouTubeEmbed)
 Vue.use(Lightbox)
 Vue.use(GoogleMaps);
 

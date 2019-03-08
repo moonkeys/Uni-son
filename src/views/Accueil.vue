@@ -1,14 +1,15 @@
-<template>
+<template xmlns:v-img="http://www.w3.org/1999/xhtml">
   <div class="wrapper">
     <parallax class="section page-header header-filter" :style="headerStyle"></parallax>
     <div class="main main-raised">
       <div class="section">
         <div class="container">
-          <div class="md-layout">
+
+            <div class="md-layout">
             <div class="md-layout-item md-size-33 md-xsmall-size-50 mx-auto text-center">
               <h1 class="title">Uni'Son</h1>
               <h3 class="subtitle">by Pulsation UTT</h3>
-              <h5 class="description">
+                <h5 class="description">
                 résumé unison.
                 <img
                         v-img
@@ -19,15 +20,20 @@
               </h5>
               <br>
               <md-button
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                href="https://www.youtube.com/watch?v=6dNeXXj36S8&feature=youtu.be"
                 class="md-success md-lg"
                 target="_blank"
               >
-                <i class="fas fa-play"></i> Voir le teaser
+                <i class="fas fa-play"></i> Voir le teaser sur Youtube
               </md-button>
+                <br>
+                <div class="md-layout-item md-medium-size-75 md-small-size-100" style="padding-top: 15px"><youtube video-id="6dNeXXj36S8" player-width="1280" player-height="750"/></div>
             </div>
+
+
           </div>
-          <div class="team-player text-center">
+
+            <div class="team-player text-center">
             <md-card class="md-card-plain">
               <div class="md-layout-item md-medium-size-33 md-small-size-100">
                 <div class="info">
@@ -70,13 +76,13 @@
                         class="img-raised rounded-circle img-fluid"
                       >
                     </div>
-                    <h4 class="card-title">Binouze
+                    <h4 class="card-title">Leffe Ruby
                       <br>
-                      <small class="card-description text-muted">connais pas</small>
+                      <small class="card-description text-muted">2.5€</small>
                     </h4>
 
                     <md-card-content>
-                      <p class="card-description">input text.</p>
+                      <p class="card-description">Une bière fruitée, aromatisée aux fruits rouges et brassée avec du jus de sureau.</p>
                     </md-card-content>
                   </md-card>
                 </div>
@@ -91,13 +97,13 @@
                         class="img-raised rounded-circle img-fluid"
                       >
                     </div>
-                    <h4 class="card-title">Binouze
+                    <h4 class="card-title">Blanche de Namur
                       <br>
-                      <small class="card-description text-muted">bière locale du canada</small>
+                      <small class="card-description text-muted">2 €</small>
                     </h4>
 
                     <md-card-content>
-                      <p class="card-description">2.50</p>
+                      <p class="card-description">Une bière blanche de belgique devenue un classique du style à la renommé mondial !</p>
                     </md-card-content>
                   </md-card>
                 </div>
@@ -112,40 +118,61 @@
                         class="img-raised rounded-circle img-fluid"
                       >
                     </div>
-                    <h4 class="card-title">Et encore de la binouze
+                    <h4 class="card-title">Barbar
                       <br>
-                      <small class="card-description text-muted">pas vraiment de la bière</small>
+                      <small class="card-description text-muted">2.5 €</small>
                     </h4>
 
                     <md-card-content>
-                      <p class="card-description">7 €</p>
+                      <p class="card-description"> bière forte brune au miel produite par la Brasserie Lefebvre en Belgique.</p>
                     </md-card-content>
                   </md-card>
                 </div>
               </div>
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
-                <div class="team-player">
-                  <md-card class="md-card-plain">
-                    <div class="md-layout-item md-size-50 mx-auto">
-                      <img
-                        :src="imgBieres[3].biere"
-                        alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
-                      >
-                    </div>
-                    <h4 class="card-title">Mdr ce sont des legos
-                      <br>
-                      <small class="card-description text-muted">rafraichissante</small>
-                    </h4>
+            </div><div class="md-layout">
+            <div class="md-layout-item md-medium-size-33 md-small-size-100">
+              <div class="team-player">
+                <md-card class="md-card-plain">
+                  <div class="md-layout-item md-size-50 mx-auto">
+                    <img
+                            :src="imgBieres[4].biere"
+                            alt="Thumbnail Image"
+                            class="img-raised rounded-circle img-fluid"
+                    >
+                  </div>
+                  <h4 class="card-title">Soft
+                    <br>
+                    <small class="card-description text-muted">Gratuit pour les SAM</small>
+                  </h4>
 
-                    <md-card-content>
-                      <p class="card-description">19 €</p>
-                    </md-card-content>
-                  </md-card>
-                </div>
+                  <md-card-content>
+                    <p class="card-description">Insérer liste des softs ici</p>
+                  </md-card-content>
+                </md-card>
               </div>
             </div>
-          </div>
+            <div class="md-layout-item md-medium-size-33 md-small-size-100">
+              <div class="team-player">
+                <md-card class="md-card-plain">
+                  <div class="md-layout-item md-size-50 mx-auto">
+                    <img
+                            :src="imgBieres[3].biere"
+                            alt="Thumbnail Image"
+                            class="img-raised rounded-circle img-fluid"
+                    >
+                  </div>
+                  <h4 class="card-title">Croques Monsieur
+                    <br>
+                    <small class="card-description text-muted">1 € l'un et 2 € les 3</small>
+                  </h4>
+
+                  <md-card-content>
+                    <p class="card-description">- Chèvre miel <br>- Classique <br> (Photo non contractuelle)</p>
+                  </md-card-content>
+                </md-card>
+              </div>
+            </div>
+          </div></div>
         </div>
       </div>
       <div class="section text-center">
@@ -213,6 +240,19 @@
                   </md-card>
                 </div>
               </div>
+                <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                    <div class="team-player">
+                        <md-card class="md-card-plain">
+                            <div class="md-layout-item md-size-50 mx-auto">
+                                <img :src="partenaires[6].logo" alt="Thumbnail Image" class="img-fluid">
+                            </div>
+                            <h4 class="card-title">Radio Campus 3
+                                <br>
+                                <small class="card-description text-muted">Meilleure radio étudiante</small>
+                            </h4>
+                        </md-card>
+                    </div>
+                </div>
             </div>
           </div>
         </div>
@@ -265,20 +305,35 @@
                   </md-card>
                 </div>
               </div>
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
-                <div class="team-player">
-                  <md-card class="md-card-plain">
-                    <div class="md-layout-item md-size-50 mx-auto">
-                      <img :src="partenaires[3].logo" alt="Thumbnail Image" class="img-fluid">
-                    </div>
-                    <h4 class="card-title">Maison du Boulanger
-                      <br>
-                      <small class="card-description text-muted">Centre Culturel</small>
-                    </h4>
-                  </md-card>
-                </div>
-              </div>
             </div>
+              <div class="md-layout">
+              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                  <div class="team-player">
+                      <md-card class="md-card-plain">
+                          <div class="md-layout-item md-size-50 mx-auto">
+                              <img :src="partenaires[3].logo" alt="Thumbnail Image" class="img-fluid">
+                          </div>
+                          <h4 class="card-title">Maison du Boulanger
+                              <br>
+                              <small class="card-description text-muted">Centre Culturel</small>
+                          </h4>
+                      </md-card>
+                  </div>
+              </div>
+              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                  <div class="team-player">
+                      <md-card class="md-card-plain">
+                          <div class="md-layout-item md-size-50 mx-auto">
+                              <img :src="partenaires[7].logo" alt="Thumbnail Image" class="img-fluid">
+                          </div>
+                          <h4 class="card-title">MGEL
+                              <br>
+                              <small class="card-description text-muted">La sécurité sociale étudiante</small>
+                          </h4>
+                      </md-card>
+                  </div>
+              </div>
+              </div>
           </div>
         </div>
       </div>
@@ -432,7 +487,8 @@ export default {
         { biere: require("@/assets/img/consommable/biere-1.jpg") },
         { biere: require("@/assets/img/consommable/biere-2.jpg") },
         { biere: require("@/assets/img/consommable/biere-3.jpg") },
-        { biere: require("@/assets/img/consommable/biere-4.jpg") }
+        { biere: require("@/assets/img/consommable/biere-4.jpg") },
+        { biere: require("@/assets/img/consommable/biere-5.jpg") }
       ],
       background: require("@/assets/img/affiche/fond-bannière.png"),
       mapView: require("@/assets/img/map.png"),
@@ -442,8 +498,11 @@ export default {
         { logo: require("@/assets/img/partenaires/crous.png") },
         { logo: require("@/assets/img/partenaires/maison-boulanger.jpg") },
         { logo: require("@/assets/img/partenaires/argentique.jpg") },
-        { logo: require("@/assets/img/partenaires/media.jpg") }
-      ]
+        { logo: require("@/assets/img/partenaires/media.jpg") },
+          { logo: require("@/assets/img/partenaires/rc3.png") },
+          { logo: require("@/assets/img/partenaires/mgel.jpg") }
+      ],
+        videoId: null
     };
   },
   computed: {
@@ -452,7 +511,13 @@ export default {
         backgroundImage: `url(${this.header})`
       };
     }
-  }
+  },
+    methods: {
+        getVideoId (url) {
+            this.videoId = this.$youtube.getIdFromURL(url)
+        }
+
+    }
 };
 </script>
 
