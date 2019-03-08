@@ -1,6 +1,6 @@
 <template xmlns:v-img="http://www.w3.org/1999/xhtml">
   <div class="wrapper">
-    <parallax class="section page-header header-filter" :style="headerStyle"></parallax>
+    <parallax class="section page-header header-filter"  :style="headerStyle"></parallax>
     <div class="main main-raised">
       <div class="section">
         <div class="container">
