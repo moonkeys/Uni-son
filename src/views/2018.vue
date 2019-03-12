@@ -1,21 +1,27 @@
 <template xmlns:v-img="http://www.w3.org/1999/xhtml">
   <div class="wrapper">
-    <parallax class="section page-header header-filter" :style="headerStyle"></parallax>
+    <parallax
+      class="section page-header header-filter"
+      :style="headerStyle"
+    ></parallax>
     <div class="main main-raised">
       <div class="section">
         <div class="container">
           <div class="md-layout">
-            <div class="md-layout-item md-size-33 md-xsmall-size-50 mx-auto text-center">
+            <div
+              class="md-layout-item md-size-33 md-xsmall-size-50 mx-auto text-center"
+            >
               <h1 class="title">Uni'Son 2018</h1>
               <h5 class="description">
                 Edition 2018
-                <img v-img
+                <img
+                  v-img
                   src="@/assets/img/affiche/affiche2018.png"
                   alt="affiche2018"
                   style="padding-bottom: 15px"
-                >
+                />
               </h5>
-              <br>
+              <br />
             </div>
           </div>
         </div>
@@ -24,133 +30,158 @@
         <div class="container">
           <h2 class="title">Artistes</h2>
           <div class="team">
-            <div class="md-layout-item md-medium-size-33 md-small-size-100">
-              <div class="team-player">
-                <md-card class="md-card-plain">
-                  <div class="md-layout-item md-size-25 md-medium-size-33 md-small-size-100 mx-auto">
-                    <img
-                      src="@/assets/img/faces/stone-weather.jpg"
-                      alt="Thumbnail Image"
-                      class="img-raised rounded-circle img-fluid"
+            <div class="md-layout">
+              <md-card class="md-card-plain">
+                <div
+                  class="md-layout-item md-size-33 md-medium-size-33 md-small-size-50 mx-auto"
+                >
+                  <img
+                    src="@/assets/img/faces/stone-weather.jpg"
+                    alt="Thumbnail Image"
+                    class="img-raised rounded-circle img-fluid"
+                  />
+                </div>
+                <h4 class="card-title">
+                  Stone Weather
+                  <br />
+                  <small class="card-description text-muted">Funk rock</small>
+                </h4>
+                <md-card-content>
+                  <p class="card-description">
+                    L’univers de Stone Weather promet un beau moment de
+                    réjouissance. Si le rock est son adage, Stone Weather
+                    empreinte allègrement son ambiance à la pop, au blues, au
+                    funk. Ainsi les 4 musiciens plongent le public dans un set
+                    éclectique savamment orche
+                  </p>
+                  <div class="md-layout">
+                    <div
+                      class="md-layout-item md-medium-size-33 md-small-size-50 md-size-66 md-xsmall-size-100 mx-auto text-center"
                     >
-                  </div>
-                  <h4 class="card-title">Stone Weather
-                    <br>
-                    <small class="card-description text-muted">Funk rock</small>
-                  </h4>
-                  <md-card-content>
-                    <p class="card-description">L’univers de Stone Weather promet un beau moment de réjouissance. Si le rock est son adage, Stone Weather empreinte allègrement son ambiance à la pop, au blues, au funk. Ainsi les 4 musiciens plongent le public dans un set éclectique savamment orche
-                    </p>
-                    <div class="md-layout" >
-                      <div class="md-layout-item md-size-50 md-medium-size-33 md-small-size-100 mx-auto"> <img
-                              v-img
-                              src="@/assets/img/2018/uni_son-44.jpg"
-                              alt="Thumbnail Image"
-                              class="img-raised img-fluid"
-                      ></div>
-                      <div class="md-layout-item md-size-50 md-medium-size-33 md-small-size-100 mx-auto">
-                        <img
-                                v-img
-                                src="@/assets/img/2018/uni_son-45.jpg"
-                                alt="Thumbnail Image"
-                                class="img-raised img-fluid"
-                        ></div>
-
+                      <img
+                        v-img
+                        src="@/assets/img/2018/uni_son-44.jpg"
+                        alt="Thumbnail Image"
+                        class="img-raised img-fluid"
+                      />
                     </div>
 
-                  </md-card-content>
-                </md-card>
-              </div>
+                    <div
+                      class="md-layout-item md-medium-size-33 md-small-size-50 md-size-66 md-xsmall-size-100 mx-auto text-center"
+                    >
+                      <img
+                        v-img
+                        src="@/assets/img/2018/uni_son-45.jpg"
+                        alt="Thumbnail Image"
+                        class="img-raised img-fluid"
+                      />
+                    </div>
+                  </div>
+                </md-card-content>
+              </md-card>
             </div>
             <div class="md-layout">
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+              <div class="md-layout-item md-medium-size-33 md-small-size-50">
                 <div class="team-player">
                   <md-card class="md-card-plain">
                     <div class="md-layout-item md-size-50 mx-auto"></div>
-                    <h4 class="card-title">Bees Nest
-                      <br>
+                    <h4 class="card-title">
+                      Bees Nest
+                      <br />
                       <small class="card-description text-muted">UTT</small>
                     </h4>
 
                     <md-card-content>
                       <p class="card-description">
-                        Bzzzzzzzzz, entre reprises et créations pop-rock, les Bees Nest vont faire bourdonner la scène d'Uni'Son ! Back in Bees Nest !
+                        Bzzzzzzzzz, entre reprises et créations pop-rock, les
+                        Bees Nest vont faire bourdonner la scène d'Uni'Son !
+                        Back in Bees Nest !
                         <img
-                                v-img
+                          v-img
                           src="@/assets/img/faces/beesnest.jpg"
                           alt="Thumbnail Image"
                           class="img-raised img-fluid"
-                        >
+                        />
                       </p>
                     </md-card-content>
                   </md-card>
                 </div>
               </div>
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+              <div class="md-layout-item md-medium-size-33 md-small-size-50">
                 <div class="team-player">
                   <md-card class="md-card-plain">
                     <div class="md-layout-item md-size-50 mx-auto"></div>
-                    <h4 class="card-title">Ceci Dit
-                      <br>
+                    <h4 class="card-title">
+                      Ceci Dit
+                      <br />
                       <small class="card-description text-muted">UTT</small>
                     </h4>
 
                     <md-card-content>
                       <p class="card-description">
-                        Alors en fait j’ai ajouté Guillaume sur Facebook par erreur et puis on a commencé à faire du punk rock. Après il a rencontré Stann dans ce genre de sanitaire (tu le sais) et comme par hasard le démon du rythme l’habitait. Du coup on a commencé à faire du sale dans le respect de chacun.
-                        Voilà c’est tout. A plus dans le bus.
+                        Alors en fait j’ai ajouté Guillaume sur Facebook par
+                        erreur et puis on a commencé à faire du punk rock. Après
+                        il a rencontré Stann dans ce genre de sanitaire (tu le
+                        sais) et comme par hasard le démon du rythme l’habitait.
+                        Du coup on a commencé à faire du sale dans le respect de
+                        chacun. Voilà c’est tout. A plus dans le bus.
                         <img
-                                v-img
+                          v-img
                           src="@/assets/img/faces/ceci-dit.png"
                           alt="Thumbnail Image"
                           class="img rounded-circle img-fluid"
-                        >
+                        />
                       </p>
                     </md-card-content>
                   </md-card>
                 </div>
               </div>
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+              <div class="md-layout-item md-medium-size-33 md-small-size-50">
                 <div class="team-player">
                   <md-card class="md-card-plain">
                     <div class="md-layout-item md-size-50 mx-auto"></div>
-                    <h4 class="card-title">Jazzy et Michel
-                      <br>
+                    <h4 class="card-title">
+                      Jazzy et Michel
+                      <br />
                       <small class="card-description text-muted">UTT</small>
                     </h4>
 
                     <md-card-content>
                       <p class="card-description">
-                        Viens dire merci à Jazzy et Michel, le groupe qui t'envoie de bonne vibes sur tes orifices auditifs
+                        Viens dire merci à Jazzy et Michel, le groupe qui
+                        t'envoie de bonne vibes sur tes orifices auditifs
                         <img
-                                v-img
+                          v-img
                           src="@/assets/img/faces/jazzy-et-michel.jpg"
                           alt="Thumbnail Image"
                           class="img-raised img-fluid"
-                        >
+                        />
                       </p>
                     </md-card-content>
                   </md-card>
                 </div>
               </div>
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+              <div class="md-layout-item md-medium-size-33 md-small-size-50">
                 <div class="team-player">
                   <md-card class="md-card-plain">
                     <div class="md-layout-item md-size-50 mx-auto"></div>
-                    <h4 class="card-title">PT = nRV
-                      <br>
+                    <h4 class="card-title">
+                      PT = nRV
+                      <br />
                       <small class="card-description text-muted">UTT</small>
                     </h4>
 
                     <md-card-content>
                       <p class="card-description">
-                        On réveille les démons de notre apocalypse qui détruisent tout entre les lignes et qui sentent l'esprit des adolescents qui se croient millionnaires.
+                        On réveille les démons de notre apocalypse qui
+                        détruisent tout entre les lignes et qui sentent l'esprit
+                        des adolescents qui se croient millionnaires.
                         <img
-                                v-img
+                          v-img
                           src="@/assets/img/faces/ptnrv.jpg"
                           alt="Thumbnail Image"
                           class="img-raised img-fluid"
-                        >
+                        />
                       </p>
                     </md-card-content>
                   </md-card>
@@ -158,36 +189,42 @@
               </div>
             </div>
             <div class="md-layout">
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+              <div class="md-layout-item md-medium-size-33 md-small-size-50">
                 <div class="team-player">
                   <md-card class="md-card-plain">
                     <div class="md-layout-item md-size-50 mx-auto"></div>
-                    <h4 class="card-title">Rush To Stage
-                      <br>
+                    <h4 class="card-title">
+                      Rush To Stage
+                      <br />
                       <small class="card-description text-muted">UTBM</small>
                     </h4>
 
                     <md-card-content>
                       <p class="card-description">
-                        Hey ! Nous c'est Rush to Stage, un groupe de l'UTBM monté il y a peu et spécialement pour l'occasion ! Notre délire ? Du bon vieux Rock avec une pointe de Punk de temps à autres, mais on joue aussi un peu de Pop 😀
-                        N'hésite pas à venir nous écouter, on fait un peu peur, mais on mord pas, promis ! 😉
+                        Hey ! Nous c'est Rush to Stage, un groupe de l'UTBM
+                        monté il y a peu et spécialement pour l'occasion ! Notre
+                        délire ? Du bon vieux Rock avec une pointe de Punk de
+                        temps à autres, mais on joue aussi un peu de Pop 😀
+                        N'hésite pas à venir nous écouter, on fait un peu peur,
+                        mais on mord pas, promis ! 😉
                         <img
-                                v-img
+                          v-img
                           src="@/assets/img/faces/rush-to-stage.jpg"
                           alt="Thumbnail Image"
                           class="img-raised img-fluid"
-                        >
+                        />
                       </p>
                     </md-card-content>
                   </md-card>
                 </div>
               </div>
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+              <div class="md-layout-item md-medium-size-33 md-small-size-50">
                 <div class="team-player">
                   <md-card class="md-card-plain">
                     <div class="md-layout-item md-size-50 mx-auto"></div>
-                    <h4 class="card-title">Wazaaaaa
-                      <br>
+                    <h4 class="card-title">
+                      Wazaaaaa
+                      <br />
                       <small class="card-description text-muted">UTT</small>
                     </h4>
 
@@ -195,57 +232,64 @@
                       <p class="card-description">
                         Avec plein de a
                         <img
-                                v-img
+                          v-img
                           src="@/assets/img/faces/wazaaa.jpg"
                           alt="Thumbnail Image"
                           class="img-raised img-fluid"
-                        >
+                        />
                       </p>
                     </md-card-content>
                   </md-card>
                 </div>
               </div>
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+              <div class="md-layout-item md-medium-size-33 md-small-size-50">
                 <div class="team-player">
                   <md-card class="md-card-plain">
                     <div class="md-layout-item md-size-50 mx-auto"></div>
-                    <h4 class="card-title">Zipper
-                      <br>
+                    <h4 class="card-title">
+                      Zipper
+                      <br />
                       <small class="card-description text-muted">UTC</small>
                     </h4>
 
                     <md-card-content>
                       <p class="card-description">
-                        Le groupe Zipper viendra de l'UTC pour te transporter dans leur univers : le hardrock
+                        Le groupe Zipper viendra de l'UTC pour te transporter
+                        dans leur univers : le hardrock
                         <img
-                                v-img
+                          v-img
                           src="@/assets/img/faces/zipper.jpg"
                           alt="Thumbnail Image"
                           class="img-raised img-fluid"
-                        >
+                        />
                       </p>
                     </md-card-content>
                   </md-card>
                 </div>
               </div>
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+              <div class="md-layout-item md-medium-size-33 md-small-size-50">
                 <div class="team-player">
                   <md-card class="md-card-plain">
                     <div class="md-layout-item md-size-50 mx-auto"></div>
-                    <h4 class="card-title">F0cked Rythm
-                      <br>
-                      <small class="card-description text-muted">Gros cons :3</small>
+                    <h4 class="card-title">
+                      F0cked Rythm
+                      <br />
+                      <small class="card-description text-muted"
+                        >Gros cons :3</small
+                      >
                     </h4>
 
                     <md-card-content>
                       <p class="card-description">
-                        Ils te proposeront des reprises de riffs et des créations originales, le tout assaisonnés d’une petite sauce résultant d’un mélange de groove et de subtilité
+                        Ils te proposeront des reprises de riffs et des
+                        créations originales, le tout assaisonnés d’une petite
+                        sauce résultant d’un mélange de groove et de subtilité
                         <img
-                                v-img
+                          v-img
                           src="@/assets/img/faces/focked-rythm.jpg"
                           alt="Thumbnail Image"
                           class="img-raised img-fluid"
-                        >
+                        />
                       </p>
                     </md-card-content>
                   </md-card>
@@ -255,7 +299,7 @@
           </div>
         </div>
       </div>
-      <div class="section text-center">
+      <!--<div class="section text-center">
         <div class="container">
           <h1 class="title">Galerie photos édition 2018</h1>
           <div class="md-layout-item md-medium-size-33 md-small-size-100">
@@ -263,20 +307,28 @@
               <md-card class="md-card-plain">
                 <div class="md-layout-item mx-auto">
                   <div
-                          v-img:group1
+                    v-img:group1
                     class="image"
                     v-for="(image, imageIndex) in images"
                     :key="imageIndex"
                     @click="index = imageIndex"
-                    :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"
+                    :style="{
+                      backgroundImage: 'url(' + image + ')',
+                      width: '300px',
+                      height: '200px'
+                    }"
                   ></div>
-                  <gallery :images="images" :index="index" @close="index = null"></gallery>
+                  <gallery
+                    :images="images"
+                    :index="index"
+                    @close="index = null"
+                  ></gallery>
                 </div>
               </md-card>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -297,7 +349,7 @@ export default {
   },
   data() {
     return {
-      images: [
+      /* images: [
         require("@/assets/img/2018/uni_son-1.jpg"),
         require("@/assets/img/2018/uni_son-2.jpg"),
         require("@/assets/img/2018/uni_son-5.jpg"),
@@ -325,7 +377,7 @@ export default {
         require("@/assets/img/2018/uni_son-66.jpg"),
         require("@/assets/img/2018/uni_son-67.jpg"),
         require("@/assets/img/2018/uni_son-69.jpg")
-      ],
+      ],*/
       background: require("@/assets/img/affiche/fond-bannière.png"),
       index: 0
     };
@@ -384,6 +436,3 @@ body {
   margin: 5px;
 }
 </style>
-
-
-

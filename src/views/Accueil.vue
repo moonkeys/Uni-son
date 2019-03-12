@@ -1,41 +1,66 @@
 <template xmlns:v-img="http://www.w3.org/1999/xhtml">
   <div class="wrapper">
-    <parallax class="section page-header header-filter"  :style="headerStyle"></parallax>
+    <parallax
+      class="section page-header header-filter"
+      :style="headerStyle"
+    ></parallax>
     <div class="main main-raised">
       <div class="section">
         <div class="container">
-
-            <div class="md-layout">
-            <div class="md-layout-item md-size-33 md-xsmall-size-50 mx-auto text-center">
-              <h1 class="title">Uni'Son</h1>
+          <div class="md-layout">
+            <div
+              class="md-layout-item md-size-100 md-xsmall-size-100 mx-auto text-center"
+            >
+              <h1 class="title text-center">
+                Uni'Son
+              </h1>
               <h3 class="subtitle">by Pulsation UTT</h3>
-                <h5 class="description">
-                résumé unison.
+              <h5 class="description">
+                Uni’Son est une soirée de concerts, organisée tous les ans
+                depuis 2016, qui permet aux artistes étudiants de se produire
+                sur scène. Pas moins de 500 personnes sont attendues le samedi 6
+                avril prochain pour fêter ensemble la musique et se rassembler
+                autour de cette passion commune. Uni’Son est la réunion de TOUS
+                les étudiants, quelles que soient leur nationalité,
+                culture...Tous les styles musicaux sont chaque année mis à
+                l’honneur : Rap, Jazz, Funk, Rock, Métal, Electro, Musique
+                vivante.
+              </h5>
+              <div
+                class="md-layout-item md-size-33 md-xsmall-size-50 mx-auto text-center"
+              >
                 <img
-                        v-img
+                  v-img
                   src="@/assets/img/affiche/affiche2019.png"
                   alt="affiche2019"
-                  style="padding-bottom: 15px"
-                >
-              </h5>
-              <br>
-              <md-button
-                href="https://www.youtube.com/watch?v=6dNeXXj36S8&feature=youtu.be"
-                class="md-success md-lg"
-                target="_blank"
-              >
-                <i class="fas fa-play"></i> Voir le teaser sur Youtube
-              </md-button>
-                <br>
-                <div class="md-layout-item md-medium-size-75 md-small-size-100" style="padding-top: 15px"><youtube video-id="6dNeXXj36S8" player-width="1280" player-height="750"/></div>
+                  style="padding-bottom: 5vw"
+                />
+              </div>
             </div>
 
-
+            <div class="md-layout">
+              <div
+                class="md-layout-item md-medium-size-50 md-small-size-100 mx-auto text-center"
+              >
+                <md-button
+                  href="https://www.youtube.com/watch?v=elF57mj-xxY&feature=youtu.be"
+                  class="md-success md-layout-item md-medium-size-75 md-small-size-100"
+                  target="_blank"
+                >
+                  <i class="fas fa-play"></i> Teaser
+                </md-button>
+                <youtube
+                  video-id="elF57mj-xxY"
+                  player-width="1280"
+                  player-height="750"
+                />
+              </div>
+            </div>
           </div>
 
-            <div class="team-player text-center">
+          <div class="md-layout">
             <md-card class="md-card-plain">
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+              <div class="md-layout-item md-size-100 md-xsmall-size-100 mx-auto text-center">
                 <div class="info">
                   <div class="icon icon-info">
                     <md-icon>map</md-icon>
@@ -43,17 +68,20 @@
                 </div>
 
                 <h2 class="title text-center">Où c'est ?</h2>
-                <div class="md-layout-item md-size-50 mx-auto">
-                  <h5
-                    class="description"
-                  >Pour la première fois, Uni'Son aura lieu à la Chapelle Argence !</h5>
-                  <img :src="mapView" v-img alt="Maps" class="img-raised">
+
+                  <h5 class="description">
+                    Pour la première fois, Uni'Son aura lieu à la Chapelle
+                    Argence !
+                  </h5>
+                  <div class="md-layout-item md-size-66 md-xsmall-size-100 mx-auto text-center">
+                  <img :src="mapView" v-img alt="Maps" class="img-raised" />
                 </div>
-                <br>
+                <br />
                 <h4 class="card-title">
                   <a
                     href="https://www.google.com/maps/place/Chapelle+Argence/@48.2877116,4.0723357,13.75z/data=!4m12!1m6!3m5!1s0x47ee9858d95ac6c3:0xbde05fa9da5fb65a!2sChapelle+Argence!8m2!3d48.2998506!4d4.0724576!3m4!1s0x47ee9858d95ac6c3:0xbde05fa9da5fb65a!8m2!3d48.2998506!4d4.0724576"
-                  >20 bis Boulevard Gambetta, 10000 Troyes</a>
+                    >20 bis Boulevard Gambetta, 10000 Troyes</a
+                  >
                 </h4>
               </div>
             </md-card>
@@ -63,7 +91,7 @@
 
       <div class="section text-center">
         <div class="container">
-          <h2 class="title">Consommables</h2>
+          <h2 class="title text-center">Consommables</h2>
           <div class="team">
             <div class="md-layout">
               <div class="md-layout-item md-medium-size-33 md-small-size-100">
@@ -74,15 +102,19 @@
                         :src="imgBieres[0].biere"
                         alt="Thumbnail Image"
                         class="img-raised rounded-circle img-fluid"
-                      >
+                      />
                     </div>
-                    <h4 class="card-title">Leffe Ruby
-                      <br>
+                    <h4 class="card-title">
+                      Leffe Ruby
+                      <br />
                       <small class="card-description text-muted">2.5€</small>
                     </h4>
 
                     <md-card-content>
-                      <p class="card-description">Une bière fruitée, aromatisée aux fruits rouges et brassée avec du jus de sureau.</p>
+                      <p class="card-description">
+                        Une bière fruitée, aromatisée aux fruits rouges et
+                        brassée avec du jus de sureau.
+                      </p>
                     </md-card-content>
                   </md-card>
                 </div>
@@ -95,15 +127,19 @@
                         :src="imgBieres[1].biere"
                         alt="Thumbnail Image"
                         class="img-raised rounded-circle img-fluid"
-                      >
+                      />
                     </div>
-                    <h4 class="card-title">Blanche de Namur
-                      <br>
+                    <h4 class="card-title">
+                      Blanche de Namur
+                      <br />
                       <small class="card-description text-muted">2 €</small>
                     </h4>
 
                     <md-card-content>
-                      <p class="card-description">Une bière blanche de belgique devenue un classique du style à la renommé mondial !</p>
+                      <p class="card-description">
+                        Une bière blanche de belgique devenue un classique du
+                        style à la renommé mondial !
+                      </p>
                     </md-card-content>
                   </md-card>
                 </div>
@@ -116,111 +152,103 @@
                         :src="imgBieres[2].biere"
                         alt="Thumbnail Image"
                         class="img-raised rounded-circle img-fluid"
-                      >
+                      />
                     </div>
-                    <h4 class="card-title">Barbar
-                      <br>
+                    <h4 class="card-title">
+                      Barbar
+                      <br />
                       <small class="card-description text-muted">2.5 €</small>
                     </h4>
 
                     <md-card-content>
-                      <p class="card-description"> bière forte brune au miel produite par la Brasserie Lefebvre en Belgique.</p>
+                      <p class="card-description">
+                        bière forte brune au miel produite par la Brasserie
+                        Lefebvre en Belgique.
+                      </p>
                     </md-card-content>
                   </md-card>
                 </div>
               </div>
-            </div><div class="md-layout">
-            <div class="md-layout-item md-medium-size-33 md-small-size-100">
-              <div class="team-player">
-                <md-card class="md-card-plain">
-                  <div class="md-layout-item md-size-50 mx-auto">
-                    <img
-                            :src="imgBieres[4].biere"
-                            alt="Thumbnail Image"
-                            class="img-raised rounded-circle img-fluid"
-                    >
-                  </div>
-                  <h4 class="card-title">Soft
-                    <br>
-                    <small class="card-description text-muted">Gratuit pour les SAM</small>
-                  </h4>
-
-                  <md-card-content>
-                    <p class="card-description">Insérer liste des softs ici</p>
-                  </md-card-content>
-                </md-card>
-              </div>
             </div>
-            <div class="md-layout-item md-medium-size-33 md-small-size-100">
-              <div class="team-player">
-                <md-card class="md-card-plain">
-                  <div class="md-layout-item md-size-50 mx-auto">
-                    <img
-                            :src="imgBieres[3].biere"
-                            alt="Thumbnail Image"
-                            class="img-raised rounded-circle img-fluid"
-                    >
-                  </div>
-                  <h4 class="card-title">Croques Monsieur
-                    <br>
-                    <small class="card-description text-muted">1 € l'un et 2 € les 3</small>
-                  </h4>
+            <div class="md-layout">
+              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                <div class="team-player">
+                  <md-card class="md-card-plain">
+                    <div class="md-layout-item md-size-50 mx-auto">
+                      <img
+                        :src="imgBieres[4].biere"
+                        alt="Thumbnail Image"
+                        class="img-raised rounded-circle img-fluid"
+                      />
+                    </div>
+                    <h4 class="card-title">
+                      Soft
+                      <br />
+                      <small class="card-description text-muted"
+                        >Gratuit pour les SAM</small
+                      >
+                    </h4>
 
-                  <md-card-content>
-                    <p class="card-description">- Chèvre miel <br>- Classique <br> (Photo non contractuelle)</p>
-                  </md-card-content>
-                </md-card>
+                    <md-card-content>
+                      <p class="card-description">
+                        Insérer liste des softs ici
+                      </p>
+                    </md-card-content>
+                  </md-card>
+                </div>
               </div>
-            </div>
-          </div></div>
-        </div>
-      </div>
-      <div class="section text-center">
-        <div class="container">
-          <h2 class="title">Photos des éditions précédentes</h2>
-          <div class="team">
-            <div class="md-layout-item md-size-66 mx-auto md-small-size-100">
-              <md-card>
-                <carousel
-                  :per-page="1"
-                  loop
-                  :speed="700"
-                  autoplay
-                  :autoplay-timeout="5000"
-                  :mouse-drag="false"
-                  navigationEnabled
-                  navigationNextLabel="<i class='material-icons'>keyboard_arrow_right</i>"
-                  navigationPrevLabel="<i class='material-icons'>keyboard_arrow_left</i>"
-                >
-                  <slide>
-                    <img v-img:group :src="carousel1" alt="carousel1">
-                  </slide>
-                  <slide>
-                    <img v-img:group :src="carousel2" alt="carousel2">
-                  </slide>
-                  <slide>
-                    <img v-img:group :src="carousel3" alt="carousel3">
-                  </slide>
-                </carousel>
-              </md-card>
+              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                <div class="team-player">
+                  <md-card class="md-card-plain">
+                    <div class="md-layout-item md-size-50 mx-auto">
+                      <img
+                        :src="imgBieres[3].biere"
+                        alt="Thumbnail Image"
+                        class="img-raised rounded-circle img-fluid"
+                      />
+                    </div>
+                    <h4 class="card-title">
+                      Croques Monsieur
+                      <br />
+                      <small class="card-description text-muted"
+                        >1 € l'un et 2 € les 3</small
+                      >
+                    </h4>
+
+                    <md-card-content>
+                      <p class="card-description">
+                        - Chèvre miel <br />- Classique <br />
+                        (Photo non contractuelle)
+                      </p>
+                    </md-card-content>
+                  </md-card>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="section text-center">
         <div class="container">
-          <h2 class="title">Remerciements</h2>
+          <h2 class="title text-center">Remerciements</h2>
           <div class="team">
             <div class="md-layout">
               <div class="md-layout-item md-medium-size-33 md-small-size-100">
                 <div class="team-player">
                   <md-card class="md-card-plain">
                     <div class="md-layout-item md-size-50 mx-auto">
-                      <img :src="partenaires[4].logo" alt="Thumbnail Image" class="img-fluid">
+                      <img
+                        :src="partenaires[4].logo"
+                        alt="Thumbnail Image"
+                        class="img-fluid"
+                      />
                     </div>
-                    <h4 class="card-title">Argentique UTT
-                      <br>
-                      <small class="card-description text-muted">Parce qu'ils font de jolies photos</small>
+                    <h4 class="card-title">
+                      Argentique UTT
+                      <br />
+                      <small class="card-description text-muted"
+                        >Parce qu'ils font de jolies photos</small
+                      >
                     </h4>
                   </md-card>
                 </div>
@@ -229,30 +257,42 @@
                 <div class="team-player">
                   <md-card class="md-card-plain">
                     <div class="md-layout-item md-size-50 mx-auto">
-                      <img :src="partenaires[5].logo" alt="Thumbnail Image" class="img-fluid">
+                      <img
+                        :src="partenaires[5].logo"
+                        alt="Thumbnail Image"
+                        class="img-fluid"
+                      />
                     </div>
-                    <h4 class="card-title">Media UTT
-                      <br>
-                      <small
-                        class="card-description text-muted"
-                      >Dommage qu'ils n'aient pas de talents...</small>
+                    <h4 class="card-title">
+                      Media UTT
+                      <br />
+                      <small class="card-description text-muted"
+                        >Dommage qu'ils n'aient pas de talents...</small
+                      >
                     </h4>
                   </md-card>
                 </div>
               </div>
-                <div class="md-layout-item md-medium-size-33 md-small-size-100">
-                    <div class="team-player">
-                        <md-card class="md-card-plain">
-                            <div class="md-layout-item md-size-50 mx-auto">
-                                <img :src="partenaires[6].logo" alt="Thumbnail Image" class="img-fluid">
-                            </div>
-                            <h4 class="card-title">Radio Campus 3
-                                <br>
-                                <small class="card-description text-muted">Meilleure radio étudiante</small>
-                            </h4>
-                        </md-card>
+              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                <div class="team-player">
+                  <md-card class="md-card-plain">
+                    <div class="md-layout-item md-size-50 mx-auto">
+                      <img
+                        :src="partenaires[6].logo"
+                        alt="Thumbnail Image"
+                        class="img-fluid"
+                      />
                     </div>
+                    <h4 class="card-title">
+                      Radio Campus 3
+                      <br />
+                      <small class="card-description text-muted"
+                        >Meilleure radio étudiante</small
+                      >
+                    </h4>
+                  </md-card>
                 </div>
+              </div>
             </div>
           </div>
         </div>
@@ -261,16 +301,44 @@
         <div class="container">
           <h2 class="title">Partenaires</h2>
           <div class="team">
-            <div class="md-layout">
+            <div class="md-layout center">
               <div class="md-layout-item md-medium-size-33 md-small-size-100">
                 <div class="team-player">
                   <md-card class="md-card-plain">
                     <div class="md-layout-item md-size-50 mx-auto">
-                      <img :src="partenaires[0].logo" alt="Thumbnail Image" class="img-fluid">
+                      <img
+                        :src="partenaires[0].logo"
+                        alt="Thumbnail Image"
+                        class="img-fluid"
+                      />
                     </div>
-                    <h4 class="card-title">BDE UTT
-                      <br>
-                      <small class="card-description text-muted">Parce qu'ils nous aiment bien</small>
+                    <h4 class="card-title">
+                      BDE UTT
+                      <br />
+                      <small class="card-description text-muted"
+                        >Parce qu'ils nous aiment bien</small
+                      >
+                    </h4>
+                  </md-card>
+                </div>
+              </div>
+
+              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                <div class="team-player">
+                  <md-card class="md-card-plain">
+                    <div class="md-layout-item md-size-50 mx-auto">
+                      <img
+                        :src="partenaires[2].logo"
+                        alt="Thumbnail Image"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <h4 class="card-title">
+                      Crous Reims
+                      <br />
+                      <small class="card-description text-muted"
+                        >C'est toujours sympa les subventions</small
+                      >
                     </h4>
                   </md-card>
                 </div>
@@ -279,13 +347,18 @@
                 <div class="team-player">
                   <md-card class="md-card-plain">
                     <div class="md-layout-item md-size-50 mx-auto">
-                      <img :src="partenaires[1].logo" alt="Thumbnail Image" class="img-fluid">
+                      <img
+                        :src="partenaires[3].logo"
+                        alt="Thumbnail Image"
+                        class="img-fluid"
+                      />
                     </div>
-                    <h4 class="card-title">Carrefour
-                      <br>
-                      <small
-                        class="card-description text-muted"
-                      >C'est toujours bien d'avoir de la bouffe</small>
+                    <h4 class="card-title">
+                      Maison du Boulanger
+                      <br />
+                      <small class="card-description text-muted"
+                        >Centre Culturel</small
+                      >
                     </h4>
                   </md-card>
                 </div>
@@ -294,46 +367,24 @@
                 <div class="team-player">
                   <md-card class="md-card-plain">
                     <div class="md-layout-item md-size-50 mx-auto">
-                      <img :src="partenaires[2].logo" alt="Thumbnail Image" class="img-fluid">
+                      <img
+                        :src="partenaires[7].logo"
+                        alt="Thumbnail Image"
+                        class="img-fluid"
+                      />
                     </div>
-                    <h4 class="card-title">Crous Reims
-                      <br>
-                      <small
-                        class="card-description text-muted"
-                      >C'est toujours sympa les subventions</small>
+                    <h4 class="card-title">
+                      MGEL
+                      <br />
+                      <small class="card-description text-muted"
+                        >La sécurité sociale étudiante</small
+                      >
                     </h4>
                   </md-card>
                 </div>
               </div>
             </div>
-              <div class="md-layout">
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
-                  <div class="team-player">
-                      <md-card class="md-card-plain">
-                          <div class="md-layout-item md-size-50 mx-auto">
-                              <img :src="partenaires[3].logo" alt="Thumbnail Image" class="img-fluid">
-                          </div>
-                          <h4 class="card-title">Maison du Boulanger
-                              <br>
-                              <small class="card-description text-muted">Centre Culturel</small>
-                          </h4>
-                      </md-card>
-                  </div>
-              </div>
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
-                  <div class="team-player">
-                      <md-card class="md-card-plain">
-                          <div class="md-layout-item md-size-50 mx-auto">
-                              <img :src="partenaires[7].logo" alt="Thumbnail Image" class="img-fluid">
-                          </div>
-                          <h4 class="card-title">MGEL
-                              <br>
-                              <small class="card-description text-muted">La sécurité sociale étudiante</small>
-                          </h4>
-                      </md-card>
-                  </div>
-              </div>
-              </div>
+            <div class="md-layout"></div>
           </div>
         </div>
       </div>
@@ -499,10 +550,10 @@ export default {
         { logo: require("@/assets/img/partenaires/maison-boulanger.jpg") },
         { logo: require("@/assets/img/partenaires/argentique.jpg") },
         { logo: require("@/assets/img/partenaires/media.jpg") },
-          { logo: require("@/assets/img/partenaires/rc3.png") },
-          { logo: require("@/assets/img/partenaires/mgel.jpg") }
+        { logo: require("@/assets/img/partenaires/rc3.jpg") },
+        { logo: require("@/assets/img/partenaires/mgel.jpg") }
       ],
-        videoId: null
+      videoId: null
     };
   },
   computed: {
@@ -512,12 +563,11 @@ export default {
       };
     }
   },
-    methods: {
-        getVideoId (url) {
-            this.videoId = this.$youtube.getIdFromURL(url)
-        }
-
+  methods: {
+    getVideoId(url) {
+      this.videoId = this.$youtube.getIdFromURL(url);
     }
+  }
 };
 </script>
 

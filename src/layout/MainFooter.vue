@@ -5,7 +5,7 @@
     :data-background-color="backgroundColor"
   >
     <div class="container">
-      <nav>
+      <!-- <nav>
         <ul>
           <li>
             <a href="https://www.creative-tim.com">
@@ -28,12 +28,12 @@
             </a>
           </li>
         </ul>
-      </nav>
-      <div class="copyright">
+      </nav>-->
+      <!-- <div class="copyright">
         &copy; {{ year }}, made with <md-icon>favorite</md-icon> by
         <a href="https://www.creative-tim.com/" target="_blank">Guillaume Blanchard</a>
         for the music lovers
-      </div>
+      </div>-->
     </div>
   </footer>
 </template>

@@ -45,10 +45,10 @@
         <p>{{ description }}</p>
       </div><div class="container">
       <div class="md-layout" >
-          <div class="md-layout-item md-size-66 mx-auto md-small-size-100">
+          <div class="md-layout-item">
         <!-- here you can add your content for tab-content -->
         <template>
-          <div v-if="carousel">
+          <!-- <div v-if="carousel">
            <md-card><carousel
               :per-page="1"
               loop
@@ -69,8 +69,8 @@
                 <img v-img:group :src="src.image" alt="carousel1" />
               </slide>
             </carousel></md-card>
-          </div>
-          <div align="center" v-else>
+          </div>-->
+          <div align="center">
             <div>
               <img v-img :src="photos" class="img-raised rounded img-fluid"/>
             </div>
@@ -133,7 +133,7 @@ export default {
     titre: String,
     photos: Array,
     description: String,
-    carousel: false,
+    // carousel: false,
     isVisible: false,
     visible: false,
     index: 0,

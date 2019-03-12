@@ -1,16 +1,16 @@
 <template>
   <div>
-    <div class="md-layout-item md-medium-size-33 md-small-size-100">
+    <div class="md-layout">
       <div class="team-player">
         <md-card class="md-card-plain">
-          <div class="md-layout-item md-size-50 mx-auto">
+          <div class="md-layout-item md-layout-item md-size-100 md-xsmall-size-100 mx-auto text-center">
             <img
               :src="img"
               alt="Thumbnail Image"
               v-if="isRaised"
               class="img-raised rounded-circle img-fluid"
             >
-            <img :src="img" alt="Thumbnail Image" v-else class="img-fluid">
+            <img :src="img" alt="Thumbnail Image" v-else class="img-fluid rounded">
           </div>
           <h4 class="card-title">
             {{title}}

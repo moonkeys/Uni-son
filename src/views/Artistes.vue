@@ -1,4 +1,4 @@
-<template>
+<template xmlns:img="">
   <div class="wrapper">
     <parallax
       class="section page-header header-filter"
@@ -10,23 +10,24 @@
       <div class="section profile-content text-center">
         <div class="container">
           <h2 class="title">Tête d'affiche</h2>
-
           <div class="md-layout">
-            <artiste
-              nom="MB14"
-              titre="Beatbox"
-              :img="photoMB14"
-              isVisible="true"
-              :photos="photosMB14"
-              carousel="true"
-              fb="https://www.facebook.com/mb14beatbox/?hc_ref=ARS40_SRiI5yyp4Ta8jNafdeieJ_DQSQwmok6_pIpb5vuvKrF97N2dzfllxa9s1xQeE&__xts__[0]=68.ARCRw1IqYeIWe3gPR56JXouWJhhNz_7NqccGc1QOtBpV33ZpEL4_d9WXQxs9rYamd7y1nVh7KAzeQlShwLaW0ksUvAnuPlo1LVufZNn1_Uz4bDuHTETSaGpi8bZdoPXJdOPbvzxni4PXY1s9bBEZCBZeM2_Ht9iSaajzYxwFjWS9jVTRwd5e9IEWVP5Usl65PJkJF0mquAvC_4gYw_uQmsrPwWdwPmnmQ4YzV09Zpxnf-vjFBGSODWhNJz1MKBAve3BtBVOnJqOTMQ&__tn__=kC-R"
-              insta="https://www.instagram.com/mb14beatbox/?hl=fr"
-              yt="https://www.youtube.com/channel/UCloH7JPn0CtzIJnThe125_g"
-              twitter="https://twitter.com/mb14beatbox"
-              description="
-              Gagnant The Voice saison 5.
+            <div
+              class="md-layout-item md-size-66 md-xsmall-size-100 mx-auto text-center"
+            >
+              <artiste
+                nom="Yves Romao"
+                titre="Auteur - Compositeur - Interprète"
+                :img="photoRomao"
+                isVisible="true"
+                :photos="photosRomao[0].image"
+                fb="https://www.facebook.com/romaoyves/"
+                insta="https://www.instagram.com/yvesromao/"
+                yt="https://www.youtube.com/user/yvesromao"
+                description="
+              Chanson Pop Musique
               "
-            />
+              />
+            </div>
           </div>
           <div class="section text-center">
             <div class="container">
@@ -34,54 +35,59 @@
               <div class="team">
                 <div class="md-layout" style="padding-bottom: 20px">
                   <div
-                    class="md-layout-item md-medium-size-33 md-small-size-100"
+                    class="md-layout-item md-medium-size-33 md-xsmall-size-100 md-small-size-100 mx-auto text-center"
                   >
-                    <artiste
-                      :photos="photosUnison[0].image"
-                      nom="Big Band UTT"
-                      titre="Meilleur Big Band de l'UTT"
+                    <item
+                      v-img
+                      :img="photosUnison[0].image"
+                      title="Big Band UTT"
+                      subtitle="Meilleur Big Band de l'UTT"
                       description="input text."
                     />
                   </div>
                   <div
-                    class="md-layout-item md-medium-size-33 md-small-size-100"
+                    class="md-layout-item md-medium-size-33 md-xsmall-size-100 md-small-size-100 mx-auto text-center"
                   >
-                    <artiste
-                      :photos="photosUnison[1].image"
-                      nom="GSN"
-                      titre="style musical"
+                    <item
+                      v-img
+                      :img="photosUnison[1].image"
+                      title="GSN"
+                      subtitle="style musical"
                       description="input text."
                     />
                   </div>
                   <div
-                    class="md-layout-item md-medium-size-33 md-small-size-100"
+                    class="md-layout-item md-medium-size-33 md-xsmall-size-100 md-small-size-100 mx-auto text-center"
                   >
-                    <artiste
-                      :photos="photosUnison[2].image"
-                      nom="Prol'UTT"
-                      titre="style musical"
+                    <item
+                      v-img
+                      :img="photosUnison[2].image"
+                      title="Prol'UTT"
+                      subtitle="style musical"
                       description="input text."
                     />
                   </div>
                 </div>
                 <div class="md-layout">
                   <div
-                    class="md-layout-item md-medium-size-33 md-small-size-100"
+                    class="md-layout-item md-medium-size-33 md-xsmall-size-100 md-small-size-100 mx-auto text-center"
                   >
-                    <artiste
-                      :photos="photosUnison[4].image"
-                      nom="Red Machines"
-                      titre="Meilleur groupe de l'UTT"
+                    <item
+                      v-img
+                      :img="photosUnison[4].image"
+                      title="Red Machines"
+                      subtitle="Groupe"
                       description="input text."
                     />
                   </div>
                   <div
-                    class="md-layout-item md-medium-size-33 md-small-size-100"
+                    class="md-layout-item md-medium-size-33 md-xsmall-size-100 md-small-size-100 mx-auto text-center"
                   >
-                    <artiste
-                      :photos="photosUnison[3].image"
-                      nom="Les Zicos"
-                      titre="style musical"
+                    <item
+                      v-img
+                      :img="photosUnison[3].image"
+                      title="Les Zicos"
+                      subtitle="style musical"
                       description="input text."
                     />
                   </div>
@@ -95,12 +101,13 @@
               <div class="team">
                 <div class="md-layout" style="padding-bottom: 20px">
                   <div
-                    class="md-layout-item md-medium-size-33 md-small-size-100"
+                    class="md-layout-item md-medium-size-33 md-xsmall-size-100 md-small-size-50 mx-auto text-center"
                   >
-                    <artiste
-                      :photos="photosUnison[5].image"
-                      nom="Still in Beta"
-                      titre="UTBM"
+                    <item
+                      v-img
+                      :img="photosUnison[5].image"
+                      title="Still in Beta"
+                      subtitle="UTBM"
                       description="Hey ! Nous c'est Still in Beta, un groupe de l'UTBM monté il y a peu et spécialement pour l'occasion ! Notre délire ? Du bon vieux Rock avec une pointe de Punk de temps à autres, mais on joue aussi un peu de Pop 😀 N'hésite pas à venir nous écouter, on fait un peu peur, mais on mord pas, promis ! 😉"
                     />
                   </div>
@@ -116,17 +123,15 @@
 
 <script>
 import Artiste from "@/views/Artiste.vue";
+import Item from "@/components/Item.vue";
 export default {
   data() {
     return {
-      photoMB14: require("@/assets/img/faces/mb14.jpg"),
-      photosMB14: [
-        { image: require("@/assets/img/mb14/mb14-2.jpg") },
-        { image: require("@/assets/img/mb14/mb14-5.jpg") },
-        { image: require("@/assets/img/mb14/mb14-1.jpg") },
-        { image: require("@/assets/img/mb14/mb14-4.jpg") }
+      photoRomao: require("@/assets/img/faces/romao-profil.jpg"),
+      photosRomao: [
+        { image: require("@/assets/img/faces/romao.jpg") },
+        { image: require("@/assets/img/faces/romao.jpg") }
       ],
-      photoMoonkeys: require("@/assets/img/faces/moonkeys.jpg"),
       photosUnison: [
         { image: require("@/assets/img/faces/big-band.jpg") },
         { image: require("@/assets/img/2018/uni_son-12.jpg") },
@@ -138,7 +143,8 @@ export default {
     };
   },
   components: {
-    Artiste
+    Artiste,
+    Item
   },
   props: {
     header: {
