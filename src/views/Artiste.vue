@@ -71,7 +71,7 @@
             </carousel></md-card>
           </div>-->
           <div align="center">
-            <div>
+            <div class="md-medium-size-33 md-xsmall-size-100 md-small-size-100 mx-auto">
               <img v-img :src="photos" class="img-raised rounded img-fluid"/>
             </div>
             <!--<div

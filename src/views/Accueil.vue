@@ -267,7 +267,7 @@
                       Media UTT
                       <br />
                       <small class="card-description text-muted"
-                        >Dommage qu'ils n'aient pas de talents...</small
+                        >Parce qu'ils font de jolies vidéos</small
                       >
                     </h4>
                   </md-card>
@@ -550,7 +550,7 @@ export default {
         { logo: require("@/assets/img/partenaires/maison-boulanger.jpg") },
         { logo: require("@/assets/img/partenaires/argentique.jpg") },
         { logo: require("@/assets/img/partenaires/media.jpg") },
-        { logo: require("@/assets/img/partenaires/rc3.jpg") },
+        { logo: require("@/assets/img/partenaires/rc3.jpeg") },
         { logo: require("@/assets/img/partenaires/mgel.jpg") }
       ],
       videoId: null
