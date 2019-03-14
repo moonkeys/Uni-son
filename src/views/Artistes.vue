@@ -109,7 +109,7 @@ Cherche pas plus loin, les Red Machines sont là pour rocker!
               <div class="team">
                 <div class="md-layout" style="padding-bottom: 20px">
                     <div
-                            class="md-layout-item md-size-50 md-xsmall-size-100 md-small-size-66 mx-auto text-center"
+                       npm      class="md-layout-item md-size-50 md-xsmall-size-100 md-small-size-66 mx-auto text-center"
                     >
                   <div
                     class="md-layout-item md-medium-size-33 md-xsmall-size-100 md-small-size-100 mx-auto text-center"
@@ -147,7 +147,7 @@ export default {
       ],
       photosUnison: [
         { image: require("@/assets/img/faces/big-band.jpg") },
-        { image: require("@/assets/img/2018/uni_son-5.jpg") },
+        { image: require("@/assets/img/faces/gsn.png") },
         { image: require("@/assets/img/faces/prol-utt.jpg") },
         { image: require("@/assets/img/faces/leszicos.png") },
         { image: require("@/assets/img/faces/redmachines.png") },

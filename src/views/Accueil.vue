@@ -155,15 +155,14 @@
                       />
                     </div>
                     <h4 class="card-title">
-                      Barbar
+                      Cuvée des Trolls
                       <br />
                       <small class="card-description text-muted">2.5 €</small>
                     </h4>
 
                     <md-card-content>
                       <p class="card-description">
-                        bière forte brune au miel produite par la Brasserie
-                        Lefebvre en Belgique.
+                        Une bière belge brassée depuis l'an 2000 par la Brasserie Dubuisson qui produit aussi les caractérielles bières Bush.
                       </p>
                     </md-card-content>
                   </md-card>

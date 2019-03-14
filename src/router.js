@@ -1,17 +1,12 @@
 /* eslint-disable prettier/prettier */
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from './views/Index.vue'
-import Landing from './views/Landing.vue'
-import Login from './views/Login.vue'
+
 import Artistes from './views/Artistes.vue'
-import Profile from './views/Profile.vue'
 import MainNavbar from './layout/MainNavbar.vue'
 import MainFooter from './layout/MainFooter.vue'
 import Contact from './views/Contact.vue'
 import Accueil from './views/Accueil.vue'
-import Gallerie from './views/Medias.vue'
-import Home from './views/Home.vue'
 import E2018 from './views/2018.vue'
 import E2017 from './views/2017.vue'
 
@@ -37,19 +32,6 @@ export default new Router({
             name: 'artistes',
             components: {
                 default: Artistes,
-                header: MainNavbar,
-                footer: MainFooter
-            },
-            props: {
-                header: { colorOnScroll: 400 },
-                footer: { backgroundColor: 'black' }
-            }
-        },
-        {
-            path: '/index',
-            name: 'index',
-            components: {
-                default: Index,
                 header: MainNavbar,
                 footer: MainFooter
             },
@@ -85,19 +67,6 @@ export default new Router({
             }
         },
         {
-            path: '/gallerie',
-            name: 'gallerie',
-            components: {
-                default: Gallerie,
-                header: MainNavbar,
-                footer: MainFooter
-            },
-            props: {
-                header: { colorOnScroll: 400 },
-                footer: { backgroundColor: 'black' }
-            }
-        },
-        {
             path: '/nouscontacter',
             name: 'nous contacter',
             components: {
@@ -115,44 +84,6 @@ export default new Router({
             name: 'accueil',
             components: {
                 default: Accueil,
-                header: MainNavbar,
-                footer: MainFooter
-            },
-            props: {
-                header: { colorOnScroll: 400 },
-                footer: { backgroundColor: 'black' }
-            }
-        },
-        {
-            path: '/landing',
-            name: 'landing',
-            components: {
-                default: Landing,
-                header: MainNavbar,
-                footer: MainFooter
-            },
-            props: {
-                header: { colorOnScroll: 400 },
-                footer: { backgroundColor: 'black' }
-            }
-        },
-        {
-            path: '/login',
-            name: 'login',
-            components: {
-                default: Login,
-                header: MainNavbar,
-                footer: MainFooter
-            },
-            props: {
-                header: { colorOnScroll: 400 }
-            }
-        },
-        {
-            path: '/profile',
-            name: 'profile',
-            components: {
-                default: Profile,
                 header: MainNavbar,
                 footer: MainFooter
             },

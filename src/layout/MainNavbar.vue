@@ -75,12 +75,12 @@
                 <i class="fas fa-ticket-alt"></i>
                 <p>Billeterie</p>
               </md-list-item>
-              <md-list-item target="_blank">
+             <!-- <md-list-item target="_blank">
                 <router-link to="nouscontacter">
                   <i class="material-icons">contacts</i>
                   <p>Contact</p>
                 </router-link>
-              </md-list-item>
+              </md-list-item> -->
               <md-list-item href="https://www.facebook.com/UniSonTroyes/" target="_blank">
                 <i class="fab fa-facebook-square"></i>
                 <p class="hidden-lg">Facebook</p>
