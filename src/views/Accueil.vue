@@ -49,11 +49,7 @@
                 >
                   <i class="fas fa-play"></i> Teaser
                 </md-button>
-                <youtube
-                  video-id="elF57mj-xxY"
-                  player-width="1280"
-                  player-height="750"
-                />
+                npm
               </div>
             </div>
           </div>
