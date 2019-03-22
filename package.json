@@ -7,7 +7,7 @@
     "scripts": {
         "serve": "./node_modules/@vue/cli-service/bin/vue-cli-service.js serve --host 0.0.0.0  --disable-host-check",
         "build": "./node_modules/@vue/cli-service/bin/vue-cli-service.js build",
-        "lint": "vue-cli-service lint",
+        "lint": "./node_modules/@vue/cli-service/bin/vue-cli-service.js lint",
         "dev": "npm run serve",
         "start": "npm run serve",
         "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run dev"
