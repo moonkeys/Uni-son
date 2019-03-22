@@ -36,6 +36,7 @@
         "@vue/eslint-config-prettier": "4.0.1",
         "node-sass": "4.11.0",
         "sass-loader": "7.1.0",
-        "vue-template-compiler": "2.6.6"
+        "vue-template-compiler": "2.6.6",
+        "copy-webpack-plugin": "^4.6.0"
     }
 }
