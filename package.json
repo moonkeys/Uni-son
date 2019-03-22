@@ -5,7 +5,7 @@
     "version": "1.1.0",
     "private": true,
     "scripts": {
-        "serve": "./node_modules/@vue/cli-service/bin/vue-cli-service.js serve --host 0.0.0.0  --disable-host-check",
+        "serve": "./node_modules/@vue/cli-service/bin/vue-cli-service.js serve --host 0.0.0.0 ",
         "build": "./node_modules/@vue/cli-service/bin/vue-cli-service.js build",
         "lint": "./node_modules/@vue/cli-service/bin/vue-cli-service.js lint",
         "dev": "npm run serve",
