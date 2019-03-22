@@ -10,7 +10,7 @@
         "lint": "./node_modules/@vue/cli-service/bin/vue-cli-service.js lint",
         "dev": "npm run serve",
         "start": "npm run dev",
-        "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run dev"
+        "clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run dev"
     },
     "dependencies": {
         "eslint": "^3.19.0",
