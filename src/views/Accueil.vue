@@ -151,14 +151,13 @@
                       />
                     </div>
                     <h4 class="card-title">
-                      Cuvée des Trolls
+                      A venir
                       <br />
-                      <small class="card-description text-muted">2.5 €</small>
+                      <small class="card-description text-muted">? €</small>
                     </h4>
-
                     <md-card-content>
                       <p class="card-description">
-                        Une bière belge brassée depuis l'an 2000 par la Brasserie Dubuisson qui produit aussi les caractérielles bières Bush.
+                        A venir...
                       </p>
                     </md-card-content>
                   </md-card>
@@ -186,7 +185,7 @@
 
                     <md-card-content>
                       <p class="card-description">
-                        Insérer liste des softs ici
+                        Eau/Sodas/Jus de Fruits
                       </p>
                     </md-card-content>
                   </md-card>
@@ -242,7 +241,7 @@
                       Argentique UTT
                       <br />
                       <small class="card-description text-muted"
-                        >Parce qu'ils font de jolies photos</small
+                        >Photographes officiels</small
                       >
                     </h4>
                   </md-card>
@@ -262,7 +261,7 @@
                       Media UTT
                       <br />
                       <small class="card-description text-muted"
-                        >Parce qu'ils font de jolies vidéos</small
+                        >Le concert est filmé!</small
                       >
                     </h4>
                   </md-card>
@@ -282,13 +281,32 @@
                       Radio Campus 3
                       <br />
                       <small class="card-description text-muted"
-                        >Meilleure radio étudiante</small
+                        >Radio étudiante, numéro 1 de France</small
                       >
                     </h4>
                   </md-card>
-                </div>
+                </div></div>
+                  <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                      <div class="team-player">
+                          <md-card class="md-card-plain">
+                              <div class="md-layout-item md-size-50 mx-auto">
+                                  <img
+                                          :src="partenaires[8].logo"
+                                          alt="Thumbnail Image"
+                                          class="img-fluid"
+                                  />
+                              </div>
+                              <h4 class="card-title">
+                                  UNG
+                                  <br />
+                                  <small class="card-description text-muted"
+                                  >Hébergeur du site d'Uni'son</small
+                                  >
+                              </h4>
+                          </md-card>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
@@ -311,7 +329,7 @@
                       BDE UTT
                       <br />
                       <small class="card-description text-muted"
-                        >Parce qu'ils nous aiment bien</small
+                        >Soutien et sponsor officiel de l'événement </small
                       >
                     </h4>
                   </md-card>
@@ -332,7 +350,7 @@
                       Crous Reims
                       <br />
                       <small class="card-description text-muted"
-                        >C'est toujours sympa les subventions</small
+                        >Pour une meilleure vie étudiante</small
                       >
                     </h4>
                   </md-card>
@@ -546,7 +564,8 @@ export default {
         { logo: require("@/assets/img/partenaires/argentique.jpg") },
         { logo: require("@/assets/img/partenaires/media.jpg") },
         { logo: require("@/assets/img/partenaires/rc3.jpeg") },
-        { logo: require("@/assets/img/partenaires/mgel.jpg") }
+        { logo: require("@/assets/img/partenaires/mgel.jpg") },
+        { logo: require("@/assets/img/partenaires/ung.png") }
       ],
       videoId: null
     };

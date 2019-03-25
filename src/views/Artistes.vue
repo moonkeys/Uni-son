@@ -59,7 +59,7 @@ classiques, succès mondiaux et medleys endiablés."
                       :img="photosUnison[1].image"
                       title="GSN"
                       subtitle="Hard Rock"
-                      description="C'est violent."
+                      description="GSN c’est: distorsion, riffs endiablés et headbang assurés avec des reprises des meilleurs morceaux de rock alternatif."
                     />
                   </div>
                   <div
@@ -151,7 +151,7 @@ export default {
         { image: require("@/assets/img/faces/prol-utt.jpg") },
         { image: require("@/assets/img/faces/leszicos.png") },
         { image: require("@/assets/img/faces/redmachines.png") },
-        { image: require("@/assets/img/2018/uni_son-5.jpg") }
+        { image: require("@/assets/img/faces/Still-in-Beta.png") }
       ]
     };
   },

@@ -33,7 +33,7 @@
             <div class="md-layout">
               <md-card class="md-card-plain">
                 <div
-                  class="md-layout-item md-size-33 md-medium-size-33 md-small-size-50 mx-auto"
+                  class="md-layout-item md-size-33 md-medium-size-33 md-small-size-50 md-xsmall-size-100 md-small-size-66 mx-auto text-center mx-auto"
                 >
                   <img
                     src="@/assets/img/faces/stone-weather.jpg"
@@ -67,7 +67,7 @@
                     </div>
 
                     <div
-                      class="md-layout-item md-medium-size-33 md-small-size-50 md-size-66 md-xsmall-size-100 mx-auto text-center"
+                      class="md-layout-item md-medium-size-33 md-small-size-50 md-size-66 md-xsmall-size-100 mx-auto text-center" style="padding-top:5px"
                     >
                       <img
                         v-img
