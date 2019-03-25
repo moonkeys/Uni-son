@@ -49,7 +49,7 @@
                 >
                   <i class="fas fa-play"></i> Teaser
                 </md-button>
-                npm
+
               </div>
             </div>
           </div>
