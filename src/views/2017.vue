@@ -57,7 +57,7 @@ export default {
   data() {
     return {
       images: [],
-      background: require("@/assets/img/affiche/fond-bannière.png"),
+      background: require("@/assets/img/affiche/fond-bannière.jpg"),
       index: 0
     };
   },

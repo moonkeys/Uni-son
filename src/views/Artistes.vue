@@ -149,9 +149,9 @@ export default {
         { image: require("@/assets/img/faces/big-band.jpg") },
         { image: require("@/assets/img/faces/gsn.png") },
         { image: require("@/assets/img/faces/prol-utt.jpg") },
-        { image: require("@/assets/img/faces/leszicos.png") },
-        { image: require("@/assets/img/faces/redmachines.png") },
-        { image: require("@/assets/img/faces/Still-in-Beta.png") }
+        { image: require("@/assets/img/faces/leszicos.jpg") },
+        { image: require("@/assets/img/faces/redmachines.jpg") },
+        { image: require("@/assets/img/faces/Still-in-Beta.jpg") }
       ]
     };
   },

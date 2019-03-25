@@ -378,7 +378,7 @@ export default {
         require("@/assets/img/2018/uni_son-67.jpg"),
         require("@/assets/img/2018/uni_son-69.jpg")
       ],*/
-      background: require("@/assets/img/affiche/fond-bannière.png"),
+      background: require("@/assets/img/affiche/fond-bannière.jpg"),
       index: 0
     };
   },

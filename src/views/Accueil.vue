@@ -554,7 +554,7 @@ export default {
         { biere: require("@/assets/img/consommable/biere-4.jpg") },
         { biere: require("@/assets/img/consommable/biere-5.jpg") }
       ],
-      background: require("@/assets/img/affiche/fond-bannière.png"),
+      background: require("@/assets/img/affiche/fond-bannière.jpg"),
       mapView: require("@/assets/img/map.png"),
       partenaires: [
         { logo: require("@/assets/img/partenaires/bdeutt.jpg") },
@@ -598,7 +598,7 @@ export default {
   margin-top: 15px;
 }
 .body {
-  background-image: url(../assets/img/affiche/fond-bannière.png);
+  background-image: url(../assets/img/affiche/fond-bannière.jpg);
   margin: 50;
 }
 </style>
