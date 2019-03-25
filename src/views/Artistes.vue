@@ -147,7 +147,7 @@ export default {
       ],
       photosUnison: [
         { image: require("@/assets/img/faces/big-band.jpg") },
-        { image: require("@/assets/img/faces/gsn.png") },
+        { image: require("@/assets/img/faces/gsn.jpg") },
         { image: require("@/assets/img/faces/prol-utt.jpg") },
         { image: require("@/assets/img/faces/leszicos.jpg") },
         { image: require("@/assets/img/faces/redmachines.jpg") },
