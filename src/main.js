@@ -7,13 +7,11 @@ import MaterialKit from "./plugins/material-kit";
 import GoogleMaps from "./plugins/googleMaps";
 
 import VueImg from "v-img";
-var compression = require('compression');
 import Lightbox from 'vue-easy-lightbox';
 import VueYouTubeEmbed from 'vue-youtube-embed'
 
 
 Vue.config.productionTip = false;
-Vue.use(compression());
 Vue.use(MaterialKit);
 Vue.use(VueImg);
 Vue.use(VueYouTubeEmbed)
