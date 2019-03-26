@@ -275,7 +275,7 @@
                       F0cked Rythm
                       <br />
                       <small class="card-description text-muted"
-                        >Gros cons :3</small
+                        >Groovy!</small
                       >
                     </h4>
 
