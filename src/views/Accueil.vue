@@ -151,13 +151,13 @@
                       />
                     </div>
                     <h4 class="card-title">
-                      A venir
+                      Maredsous 6
                       <br />
-                      <small class="card-description text-muted">? €</small>
+                      <small class="card-description text-muted">2.5€</small>
                     </h4>
                     <md-card-content>
                       <p class="card-description">
-                        A venir...
+                        Une bière belge au caractère agréablement floral. 
                       </p>
                     </md-card-content>
                   </md-card>
