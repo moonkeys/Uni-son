@@ -90,10 +90,10 @@
           <h2 class="title text-center">Consommables</h2>
           <div class="team">
             <div class="md-layout">
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+              <div class="md-layout-item md-medium-size-33 md-small-size-50">
                 <div class="team-player">
                   <md-card class="md-card-plain">
-                    <div class="md-layout-item md-size-50 mx-auto">
+                    <div class="md-layout-item md-size-40 mx-auto">
                       <img
                         :src="imgBieres[0].biere"
                         alt="Thumbnail Image"
@@ -118,7 +118,7 @@
               <div class="md-layout-item md-medium-size-33 md-small-size-100">
                 <div class="team-player">
                   <md-card class="md-card-plain">
-                    <div class="md-layout-item md-size-50 mx-auto">
+                    <div class="md-layout-item md-size-40 mx-auto">
                       <img
                         :src="imgBieres[2].biere"
                         alt="Thumbnail Image"
