@@ -120,31 +120,6 @@
                   <md-card class="md-card-plain">
                     <div class="md-layout-item md-size-50 mx-auto">
                       <img
-                        :src="imgBieres[1].biere"
-                        alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
-                      />
-                    </div>
-                    <h4 class="card-title">
-                      Blanche de Namur
-                      <br />
-                      <small class="card-description text-muted">2 €</small>
-                    </h4>
-
-                    <md-card-content>
-                      <p class="card-description">
-                        Une bière blanche de belgique devenue un classique du
-                        style à la renommé mondial !
-                      </p>
-                    </md-card-content>
-                  </md-card>
-                </div>
-              </div>
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
-                <div class="team-player">
-                  <md-card class="md-card-plain">
-                    <div class="md-layout-item md-size-50 mx-auto">
-                      <img
                         :src="imgBieres[2].biere"
                         alt="Thumbnail Image"
                         class="img-raised rounded-circle img-fluid"
